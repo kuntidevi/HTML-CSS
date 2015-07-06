@@ -1,0 +1,111 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.screen-width{
+	margin: 27px auto;
+	width: 1240px;
+}
+
+.search-box{
+	float: right;
+	border-radius: 4px;
+	width: 360px;
+	height: 70px;
+	padding: 20px;
+	border: 1px solid #646464;
+}
+
+.head{
+	float: left;
+}
+
+#search{
+	width: 270px;
+}
+
+hr{
+	border-top: 1px solid #000;
+	margin-top: 0px;
+}
+
+.btn-search{
+	width: 30px;
+	height: 26px;
+	text-align: -webkit-left;
+	margin-left: 14px;
+	background-color: #2A2A2A;
+	color: white;
+	font-size: 12px;
+	border: none;
+	position: relative;
+	bottom: 2px;
+}
+
+#logo::first-letter{
+	font-size: 36px;
+}
+
+#logo{
+	padding: 0;
+	margin: 0;
+}
+
+.nav-menu{
+	background-color: #2A2A2A;
+	color: #FFFFFF;
+	padding: 8px;
+	border-radius: 9px;
+	clear: both;
+	position: relative;
+	top: 30px;
+}
+
+.nav-list > li{
+	margin-left: 38px;
+	font-size: 16px;
+	font-family: initial;
+}
+
+.nav-list{
+	display: inline-flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sub-list ul{
+	list-style: none;
+}
+
+.sub-list ul li:before {
+	content: "\00BB \0020";
+}
+
+.footer-form{
+	padding-left: 0px;
+}
+
+.footer-form input{
+	border-radius: 0px;
+}
+
+.footer-form textarea{
+	border-radius: 0px;
+}
+
+.footer-background{
+	background: #2A2A2A;
+}
+
+.footer-background h4{
+	color: #FFFFFF;
+}
+
+.footer-background p{
+	color:#428bca;
+}
+
+.copyright, .form{
+	color: #FFF;
+}
