@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task</title>
+		<!-- <link rel="stylesheet" href="css/main.css"></link> -->
+	</head>
+	<style>
+		#one {
+			border:1px solid red;
+		}
+
+		#two {
+			text-align: center;
+			border:1px solid blue;
+			clear: left;
+			color:black;
+		}
+
+		body {
+			text-align: center;
+		}
+
+		table {
+			border: 1px solid black;
+			border-spacing: 2px;
+			border-collapse: collapse;
+			border-width: 2px;
+		}
+
+		td {
+			border: 1px solid red;
+			border-collapse: collapse;
+			border-width: 2px;
+		}
+		
+
+		div + p {
+			color : red; 
+		}
+
+		div ~ span {
+			color : blue;
+		}
+	</style>
+	<body>
+		<span id="one">Text 1</span>
+		<div id="two" style="color: green;">Text 2</div>
+		<span>Text 3</span>
+		<div>
+			<p>Hi</p>
+			<span>Hello</span>
+		</div>
+		<p>abcdef</p>
+		<table>
+			<caption>Header</caption>
+			<tbody>
+				<tr>
+					<td></td>
+					<td>Two</td>
+				</tr>
+				<tr>
+					<td>Three</td>
+					<td>Four</td>
+				</tr>
+			</tbody>
+		</table>
+		<span>Before span</span>
+		<div>div</div>
+		<p>After span</p>
+	</body>
+</html>
