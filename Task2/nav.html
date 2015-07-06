@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Navigation</title>
+		<style>
+
+			ul{
+		        padding: 0;
+		        list-style: none;
+		    }
+		    ul li{
+		        width: 100px;
+		        display: inline-block;
+		        position: relative;
+		        text-align: center;
+		    }
+		    ul li a{
+		        display: block;
+		        padding: 5px;
+		        background: antiquewhite;
+		        text-decoration: none;
+		        color: #000000;
+		    }
+		    
+		    ul li ul{
+		        display: none;
+		        position: absolute;
+		        background-color: antiquewhite;
+		    }
+		    ul li:hover ul{
+		        display: block;
+		    }
+
+		    .verticle{
+				margin-bottom: 100px;
+			}
+
+		    .verticle ul li{
+		    	display:block;
+		    	margin-bottom: 10px;
+		    }
+
+		    .verticle ul li ul{
+		        display: none;
+		        position: absolute;
+		        margin-left: 110px;
+				background-color: antiquewhite;
+				top:0px;
+		    }
+
+		    .verticle  ul li:hover ul{
+		        display: block;
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="verticle">
+			<ul>
+				<li>
+					<a href="#">One</a>
+					<ul>
+						<li>Sub-one</li>
+						<li>Sub-one</li>
+						<li>Sub-one</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Two</a>
+					<ul>
+						<li>Sub-two</li>
+						<li>Sub-two</li>
+						<li>Sub-two</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Three</a>
+					<ul>
+						<li>Sub-three</li>
+						<li>Sub-three</li>
+						<li>Sub-three</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Four</a>
+					<ul>
+						<li>Sub-four</li>
+						<li>Sub-four</li>
+						<li>Sub-four</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<a href="#">One</a>
+					<ul>
+						<li>Sub-one</li>
+						<li>Sub-one</li>
+						<li>Sub-one</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Two</a>
+					<ul>
+						<li>Sub-two</li>
+						<li>Sub-two</li>
+						<li>Sub-two</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Three</a>
+					<ul>
+						<li>Sub-three</li>
+						<li>Sub-three</li>
+						<li>Sub-three</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Four</a>
+					<ul>
+						<li>Sub-four</li>
+						<li>Sub-four</li>
+						<li>Sub-four</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
