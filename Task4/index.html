@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task#4</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+		<link rel="stylesheet" href="css/main1.css"></link>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">News</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Top Stories</a></li>
+					<li><a class="world" href="#">World</a></li>
+					<li><a class="sports" href="#">Sports</a></li>
+					<li><a class="business" href="#">Business</a></li>
+					<li><a class="tech" href="#">Technology</a></li>
+				</ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container col-sm-offset-1 display">
+			<div class="row world">
+				<div class="col-md-2">
+					<img src="img/yoga.jpg" alt="Yoga image">
+					<span class="my-label">The Hindu</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>Comity of nations united in Yoga</h4></a>
+					<span>Acceptance of India's “soft-power” yoga was evident from the public demonstrations of asanas across the globe - in Paris with the Eiffel Tower in the backdrop; along the ocean side promenade of Colombo; within the well-secured consulate compound in ...</span>
+				</div>
+			</div>
+			<div class="row world">
+				<div class="col-md-2">
+					<img src="img/navy.jpg" alt="Navy recues">
+					<span class="my-label">Hindustan Times</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>Navy rescues 19 crew members of sinking merchant vessel near Mumbai</h4></a>
+					<span>A photo of navy rescuing crew members of vessel Jindal Kamakshi. (Source: Indian Navy; Photo tweeted by ANI). Share. Nineteen members of the crew of a merchant vessel in distress in waters off the Mumbai coast were airlifted to safety during a daring ...</span>
+				</div>
+			</div>
+			<div class="row sports">
+				<div class="col-md-2">
+					<img src="img/match.png" alt="India lost">
+					<span class="my-label">First Post</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>Disappointing and defeated: India were outplayed in every department</h4></a>
+					<span>To everyone's surprise, India's selectors picked a full strength side for the tour to Bangladesh. Now we know why. Bangladesh have been the better side and have completely dominated India to win their first-ever bilateral series between the two sides.</span>
+				</div>
+			</div>
+			<div class="row world">
+				<div class="col-md-2">
+					<img src="img/modi.jpg" alt="Yoga day modi">
+					<span class="my-label">NDTV</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>'Not Invited to Yoga Day Event,' Says Vice President Hamid Ansari</h4></a>
+					<span>New Delhi: BJP leader Ram Madhav's tweet questioning Vice President Hamid Ansari's absence at a massive Yoga Day event in Delhi attended by Prime Minister Narendra Modi has stirred a controversy.</span>
+				</div>
+			</div>
+			<div class="row world">
+				<div class="col-md-2">
+					<img src="img/church.jpg">
+					<span class="my-label">Frobes</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>Mother Emanuel and the power of prayer</h4></a>
+					<span>On Sunday, hundreds of people returned to Mother Emanuel church in Charleston, South Carolina, four days after after a shooting there killed nine African-Americans.</span>
+				</div>
+			</div>
+			<div class="row tech">
+				<div class="col-md-2">
+					<img src="img/samsung.jpg" alt="Samsung galaxy S6">
+					<span class="my-label">NDTV</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>Galaxy S6 Plus Leaks Show Samsung Has Learned Nothing</h4></a>
+					<span>More details on Samsung's next iteration for the S6 family have been reported by noted internet tipster @onleaks. The current leak on the Samsung Galaxy S6 Plus follows on from previous information about the oversized version of the Galaxy S6 Edge ...</span>
+				</div>
+			</div>
+			<div class="row tech">
+				<div class="col-md-2">
+					<img src="img/google.jpg" alt="Google Trains Artificial Neural Network">
+					<span class="my-label">CDA News</span>
+				</div>
+				<div class="col-md-10">
+					<a href=""><h4>Google Trains Artificial Neural Network to Perceive and Recreate Images</h4></a>
+					<span>Google reveals beautiful, psychedelic and terrifying images spontaneously created by its Artificial Intelligence (AI) software.The advanced neural network software is essentially image recognition software. Google engineers instruct the software to ...</span>
+				</div>
+			</div>
+			<div class="row business">
+				<div class="col-md-2">
+					<img src="img/bank.jpg" alt="Banking Stocks Surge">
+					<span class="my-label">NDTV</span>
+				</div>
+				<div class="col-md-10">
+					<a href="#"><h4>Banking Stocks Surge; ICICI, SBI, HDFC Bank Lead Gains</h4></a>
+					<span>Among the banking stocks, Bank of Baroda rose 3.5 per cent to be the biggest Nifty gainer. Yes Bank, Kotak Mahindra Bank, Axis Bank, and IndusInd Bank were up between 2.5 per cent and 3 per cent. Among large caps, HDFC Bank rose over 2 per cent ...</span>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$("#myNavbar ul li").on("click", function(){
+				$(this).parent().find(".active").removeClass("active");
+				$(this).addClass("active");
+
+				var activeClass = $(this).children().attr('class');
+
+				if(activeClass){
+					$(".container").children().hide();
+					$("."+activeClass).show();
+				} else {
+					$(".container").children().show();
+				}
+			});
+		</script>
+	</body>
+</html>
